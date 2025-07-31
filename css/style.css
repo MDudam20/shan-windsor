@@ -1,8 +1,4 @@
-/* Hoteler | Hotel Booking HTML Template
-
-Template Name: Hoteler
-Version: 1.0.0
-License: copyright commercial
+/* 
 
 /************ TABLE OF CONTENTS ***************
 1. Fonts
@@ -1996,8 +1992,8 @@ Main Header
 }
 .main-header .header-lower .logo-box {
   position: relative;
+width: 180px;
 }
-
 .main-header {
   width: 100%;
   z-index: 999;
