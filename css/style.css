@@ -14824,19 +14824,19 @@ Section Title
   pointer-events: none;
 }
 .service-section.style-winter .icon-box .front-icon {
-  color: var(--dark-blue);
+  color: var(--blue);
 }
 .service-section.style-winter .inner-box:hover .bg-shap svg path {
-  fill: var(--dark-blue);
+  fill: var(--blue);
 }
 .service-section.style-winter .icon-box .bg-icon {
-  color: var(--dark-blue);
+  color: var(--blue);
 }
 .service-section.style-winter .icon-box .front-icon svg path {
-  fill: var(--dark-blue);
+  fill: var(--blue);
 }
 .service-section.style-winter .icon-box .bg-icon svg path {
-  fill: var(--dark-blue);
+  fill: var(--blue);
 }
 .service-section.style-winter-three {
   background-color: rgba(91, 197, 236, 0.1019607843);
