@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Number Marker Highlight</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; }
+
+    .highlight-section {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .image-container {
+      position: relative;
+      flex: 1;
+      padding: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .marker {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: #00bfff;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      font-size: 14px;
+      box-shadow: 0 0 5px rgba(0, 191, 255, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .marker.highlight {
+      background: #ff5722;
+      box-shadow: 0 0 12px rgba(255, 87, 34, 0.6);
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    .content-container {
+      flex: 1;
+      padding: 40px 30px;
+    }
+
+    .point {
+      margin-bottom: 20px;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s;
+    }
+
+    .point:hover, .point.active {
+      color: #00bfff;
+      font-weight: bold;
+    }
+
+    .circle-number {
+      width: 30px;
+      height: 30px;
+      background: #00bfff;
+      color: #fff;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 10px;
+      flex-shrink: 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .highlight-section {
+        flex-direction: column;
+      }
+
+      .image-container,
+      .content-container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="highlight-section">
+  <div class="image-container">
+    <img src="images/shan/terrace.webp" alt="Sample Image">
+
+    <!-- Markers for point 1 -->
+    <div class="marker" data-point="1" style="top: 20%; left: 30%;">1</div>
+
+    <!-- Markers for point 2 (multiple) -->
+    <div class="marker" data-point="2" style="top: 40%; left: 60%;">2</div>
+    <div class="marker" data-point="2" style="top: 45%; left: 50%;">2</div>
+    <div class="marker" data-point="2" style="top: 50%; left: 40%;">2</div>
+
+    <!-- Markers for point 3 -->
+    <div class="marker" data-point="3" style="top: 60%; left: 20%;">3</div>
+
+    <!-- Markers for point 4 (multiple) -->
+    <div class="marker" data-point="4" style="top: 70%; left: 70%;">4</div>
+    <div class="marker" data-point="4" style="top: 75%; left: 60%;">4</div>
+
+    <!-- Markers for point 5 (multiple) -->
+    <div class="marker" data-point="5" style="top: 80%; left: 30%;">5</div>
+    <div class="marker" data-point="5" style="top: 85%; left: 40%;">5</div>
+  </div>
+
+  <div class="content-container">
+    <div class="point" data-target="1">
+      <span class="circle-number">1</span> High-quality Build
+    </div>
+    <div class="point" data-target="2">
+      <span class="circle-number">2</span> Energy Efficient Design (3 highlights)
+    </div>
+    <div class="point" data-target="3">
+      <span class="circle-number">3</span> Smart Home Features
+    </div>
+    <div class="point" data-target="4">
+      <span class="circle-number">4</span> Modern Kitchen & Bath
+    </div>
+    <div class="point" data-target="5">
+      <span class="circle-number">5</span> Parking & Security Areas
+    </div>
+  </div>
+</section>
+
+<script>
+  const points = document.querySelectorAll('.point');
+  const markers = document.querySelectorAll('.marker');
+
+  function highlightMarker(targetId) {
+    markers.forEach(marker => {
+      marker.classList.remove('highlight');
+      if (marker.getAttribute('data-point') === targetId) {
+        marker.classList.add('highlight');
+      }
+    });
+  }
+
+  function resetMarkers() {
+    markers.forEach(marker => marker.classList.remove('highlight'));
+  }
+
+  points.forEach(point => {
+    const targetId = point.getAttribute('data-target');
+
+    // Hover (desktop)
+    point.addEventListener('mouseenter', () => highlightMarker(targetId));
+    point.addEventListener('mouseleave', resetMarkers);
+
+    // Click (mobile)
+    point.addEventListener('click', () => highlightMarker(targetId));
+  });
+</script>
+
+</body>
+</html>
