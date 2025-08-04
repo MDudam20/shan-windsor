@@ -401,40 +401,37 @@ var THEMEMASCOT = {};
 	}).slickAnimation();
 
 	//testimonial-carousel Two
-	if ($('.testimonial-carousel-two').length) {
-	   $('.testimonial-carousel-two').slick({
-		    infinite: true,
-			speed: 300,
-			slidesToShow: 3,
-			slidesToScroll: 1,
+	if ($('.room-service-carousel-two').length) {
+		var swiper = new Swiper(".room-service-carousel-two", {
+			autoplay:true,
+			speed:100,
 			dots: false,
-			arrows: true,
-			responsive: [
-			    {
-			      breakpoint: 1200,
-			      settings: {
-			        slidesToShow: 3,
-			      }
-			    },
-			    {
-			      breakpoint: 1024,
-			      settings: {
-			        slidesToShow: 2,
-			      }
-			    },
-			    {
-			      breakpoint: 600,
-			      settings: {
-			        slidesToShow: 1,
-			      }
-			    },
-			    {
-			      breakpoint: 480,
-			      settings: {
-			        slidesToShow: 1,
-			      }
-			    }
-			]
+			slidesPerView: 1,
+			spaceBetween: 30,
+			navigation: {
+	            nextEl: '.swiper-button-next',
+	            prevEl: '.swiper-button-prev',
+	        },
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+				},
+				576: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 2,
+				},
+				1023: {
+					slidesPerView: 3,
+				},
+				1400: {
+					slidesPerView: 3,
+				},
+			},
 		});
 	}
 
