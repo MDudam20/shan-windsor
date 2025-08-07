@@ -4499,7 +4499,7 @@ Main Header
   display: none;
 }
 .header-style-five .mobile-nav-toggler {
-  color: var(--blue);
+  color: #fff;
   display: inline-block;
   font-size: 24px;
   -webkit-box-ordinal-group: unset;
