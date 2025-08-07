@@ -4251,10 +4251,11 @@ Main Header
   max-width: 1750px;
 }
 .header-style-five.style-home3 .header-lower .main-menu .navigation > li > a {
-  font-size: 15px;
-  text-transform: capitalize;
-  font-family: "Yeseva One", serif;
-}
+ font-size: 17px;
+    text-transform: capitalize;
+    font-family: "Yeseva One", serif;
+    font-weight:500;}
+
 .header-style-five.style-home6 .outer-box .ui-btn-outer .ui-btn {
   color: var(--theme-color1);
 }
