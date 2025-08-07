@@ -75,7 +75,7 @@
   --review-color: #ffc737;
   --link-color: var(--headings-color);
   --link-hover-color: var(--headings-color);
-  --title-font: "Caveat", cursive;
+  --title-font: "Yeseva One", serif;
   --title-font2: "Gilda Display", serif;
   --text-font: "Poppins", sans-serif;
   --text-font2: "Barlow Condensed", serif;
@@ -4251,7 +4251,7 @@ Main Header
   max-width: 1750px;
 }
 .header-style-five.style-home3 .header-lower .main-menu .navigation > li > a {
-  font-size: 20px;
+  font-size: 15px;
   text-transform: capitalize;
   font-family: "Yeseva One", serif;
 }
@@ -4384,11 +4384,11 @@ Main Header
   }
 }
 .header-style-five .main-box .nav-outer .nav .navigation li {
-  margin-right: 49px;
+  margin-right: 29px;
 }
 @media (max-width: 1199.98px) {
   .header-style-five .main-box .nav-outer .nav .navigation li {
-    margin-right: 35px;
+    margin-right: 28px;
   }
 }
 .header-style-five .main-box .nav-outer .nav .navigation li:last-child {
@@ -4498,7 +4498,7 @@ Main Header
   display: none;
 }
 .header-style-five .mobile-nav-toggler {
-  color: var(--theme-color-white);
+  color: var(--blue);
   display: inline-block;
   font-size: 24px;
   -webkit-box-ordinal-group: unset;
@@ -4513,7 +4513,11 @@ Main Header
   /*.main-menu .navigation > li.current > a,*/
 }
 .header-style-five .sticky-header .mobile-nav-toggler {
-  display: none;
+  display: inline;
+   
+    position: absolute;
+    right: -10%;
+    top: 5px;
 }
 @media (max-width: 991.98px) {
   .header-style-five .sticky-header .mobile-nav-toggler {
@@ -6004,15 +6008,33 @@ Sticky Header
 .sticky-header .logo img {
   max-height: 100px;
 }
+
+@media (max-width: 900px) {
+ .sticky-header .nav-outer {
+     background: none;
+  margin-left:auto !important;
+  position: relative;
+  }
+}
+
+
+@media (max-width: 700px) {
+ .sticky-header .nav-outer {
+     background: none;
+  margin-left:auto !important;
+  position: relative;
+  }
+}
+
 .sticky-header .nav-outer {
   background: none;
-  margin-left: auto;
+  margin-left:17%;
   position: relative;
 }
 
 .sticky-header .main-menu .navigation > li {
   margin: 0;
-  margin-left: 60px;
+  margin-left: 25px;
   padding: 20px 0;
 }
 
@@ -15710,7 +15732,8 @@ Section Title
   z-index: 0;
 }
 .service-block-six .content-box .title{
-  font-size: 22px !important;
+  font-size: 18px !important;
+  font-family: "Poppins", sans-serif !important;
 }
 .service-block-six .inner-box:hover  .title{
   color: #fff;
@@ -16668,8 +16691,8 @@ Section Title
   padding: 10px;
 }
 .service-block16 .inner-box .image-column .inner-column .image:before {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.03%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75)));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.03%, rgba(0, 0, 0, 0.75) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.03%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.03%, rgba(0, 0, 0, 0.2) 100%);
   bottom: 0;
   content: "";
   height: 100%;
@@ -24526,7 +24549,7 @@ Section Title
   -webkit-text-stroke: 1px var(--blue);
   color: var(--theme-color-white);
   font-family: var(--title-font);
-  font-size: 120px;
+  font-size: 100px;
   line-height: 1;
   margin-bottom: 51px;
   margin-left: -3px;
@@ -24535,18 +24558,18 @@ Section Title
 }
 @media (max-width: 1199.98px) {
   .pricing-block .inner-box .image-column .inner-column .text {
-    font-size: 110px;
+    font-size: 80px;
   }
 }
 @media (max-width: 991.98px) {
   .pricing-block .inner-box .image-column .inner-column .text {
-    font-size: 90px;
+    font-size: 70px;
   }
 }
 @media (max-width: 767.98px) {
   .pricing-block .inner-box .image-column .inner-column .text {
     margin-right: 0;
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 @media (max-width: 575.98px) {
@@ -26769,7 +26792,7 @@ Section Title
 }
 
 .footer-style-one {
-  background-color:#fff1c4;
+  background-color:#73dff5;
   position: relative;
   /* Subscribe Form Three */
 }
@@ -31716,8 +31739,15 @@ Sidebar
       
     }
 
-    @media (max-width: 1024px) {
-      
+       @media (max-width: 1220px) {
+       .nav-btn.next{
+        right: 42%;
+       }
+    }
+    @media (max-width: 1050px) {
+       .nav-btn.next{
+        right: 42%;
+       }
     }
 
     @media (max-width: 768px) {
