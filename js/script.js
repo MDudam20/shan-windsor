@@ -157,6 +157,7 @@ var THEMEMASCOT = {};
 	//swiper banner five
 	if ($('.banner-slider-style-home5').length) {
 		var swiper = new Swiper(".banner-slider-style-home5", {
+			  autoplay: true,
 			slidesPerView: 1,
 			spaceBetween: 130,
 			loop: "true",
