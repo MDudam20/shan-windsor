@@ -40,8 +40,7 @@
 @import url("tm-bs-mp.css");
 @import url("tm-utility-classes.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Yeseva+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Yeseva+One&display=swap');
 :root {
   --theme-color-light: #ffffff;
   --theme-color-white: #ffffff;
@@ -76,7 +75,7 @@
   --review-color: #ffc737;
   --link-color: var(--headings-color);
   --link-hover-color: var(--headings-color);
-  --title-font: "Yeseva One", serif;
+  --title-font: "Caveat", cursive;
   --title-font2: "Gilda Display", serif;
   --text-font: "Poppins", sans-serif;
   --text-font2: "Barlow Condensed", serif;
@@ -591,7 +590,7 @@ figure.image {
 #preloader {
     position: fixed;
     inset: 0;
-    background: #0c0c1e;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4254,6 +4253,7 @@ Main Header
 .header-style-five.style-home3 .header-lower .main-menu .navigation > li > a {
   font-size: 20px;
   text-transform: capitalize;
+  font-family: "Yeseva One", serif;
 }
 .header-style-five.style-home6 .outer-box .ui-btn-outer .ui-btn {
   color: var(--theme-color1);
@@ -4541,7 +4541,7 @@ Main Header
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fff0c2;
+  background: #73dff5;
 }
 .header-style-five .sticky-header .main-menu {
   height: 100%;
@@ -6131,7 +6131,7 @@ Sticky Header
   right: -5px;
   text-align: center;
   font-size: 18px;
-  color: #ffffff;
+  color: black;
   height: 30px;
   width: 30px;
   line-height: 30px;
@@ -6172,7 +6172,7 @@ Sticky Header
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
-  background-color: #222;
+  background-color: white;
   padding: 0px 0px;
   z-index: 5;
   opacity: 0;
@@ -6235,7 +6235,7 @@ Sticky Header
   line-height: 24px;
   padding: 10px 20px;
   font-size: 16px;
-  color: #ffffff;
+  color: black;
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -6303,31 +6303,31 @@ Sticky Header
   top: 3px;
   font-size: 34px;
   line-height: 50px;
-  color: #ffffff;
+  color: black;
 }
 .contact-list-one li .title {
   display: block;
   font-size: 12px;
-  color: var(--theme-color1);
-  font-weight: 400;
+  color: black;
+  font-weight: 900;
   text-transform: uppercase;
 }
 .contact-list-one li a {
-  color: #fff;
+  color: black;
 }
 .contact-list-one li .text {
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
+  color: black;
 }
 .contact-list-one li .text a {
-  color: #ffffff;
+  color: black;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
 .contact-info-box {
-  color: #fff;
+  color: black;
 }
 
 .mobile-menu .social-links {
@@ -31658,7 +31658,7 @@ Sidebar
       height: 100%;
       top: 0;
       left: 0;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
       z-index: 2;
       pointer-events: none;
     }
