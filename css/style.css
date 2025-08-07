@@ -88,7 +88,7 @@
   --line-height-heading: 1.2;
   --line-height-heading-small: 1.35em;
   --h1-font-size: 72px;
-  --h2-font-size: 50px;
+  --h2-font-size: 40px;
   --h3-font-size: 36px;
   --h4-font-size: 24px;
   --h5-font-size: 22px;
@@ -14604,7 +14604,7 @@ Section Title
   color: var(--blue);
   display: block;
   font-family: var(--title-font);
-  font-size: 128px;
+  font-size: 84px;
   font-weight: 400;
   line-height: 96px;
   position: relative;
@@ -14619,13 +14619,13 @@ Section Title
   color:var(--theme-color5);
   font-family: var(--text-font);
   font-family: var(--title-font);
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 28.8px;
   margin-bottom: 0;
   position: absolute;
   text-align: center;
-  top: 120px;
+  top: 100px;
 }
 @media (max-width: 575.98px) {
   .counter-block-one .inner-box .counter-text {
@@ -31801,7 +31801,7 @@ Sidebar
     color: var(--blue);
     padding-top: 10px;
     
-    font-size: 24px;
+    font-size: 18px;
   }
 
   @keyframes soft-blink {
