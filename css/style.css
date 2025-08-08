@@ -672,14 +672,14 @@ Scroll To Top style
 .scroll-to-top {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 70px;
   width: 40px;
   font-size: 16px;
   line-height: 40px;
-  color: var();
+  color: var(--theme-color-white);
   text-align: center;
   cursor: pointer;
-  background-color: var(--theme-color-white);
+  background-color: var(--blue);
   z-index: 100;
   display: none;
   border-radius: 50%;
@@ -31818,12 +31818,11 @@ Sidebar
   display: inline-block;
     right: -198px;
   animation: floatStarfish 2s ease-in-out infinite;
+
 }
-
 .starfish-animated img {
-  width: 40%; /* You can change this size as needed */
-  pointer-events: none; /* So it doesn’t block interaction */
-
+  width: 40%;
+  pointer-events: none; 
 }
   @media (max-width: 1000px){
      .starfish-animated {
@@ -31938,5 +31937,15 @@ Sidebar
   .sticky-buttons span{
     font-size: 12px;
     padding-left: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .why-choose-us-column .col-xs-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .why-choose-us .why-choose-us-column .inner-column .why-choose-us-box .inner-box .content-box .title {
+
+    font-size: 10px !important;
   }
 }
