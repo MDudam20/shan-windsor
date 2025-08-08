@@ -4251,9 +4251,9 @@ Main Header
   max-width: 1750px;
 }
 .header-style-five.style-home3 .header-lower .main-menu .navigation > li > a {
- font-size: 17px;
+ font-size: 16px;
     text-transform: capitalize;
-    font-family: "Yeseva One", serif;
+    font-family: "Poppins", sans-serif;
     font-weight:500;}
 
 .header-style-five.style-home6 .outer-box .ui-btn-outer .ui-btn {
@@ -4515,15 +4515,19 @@ Main Header
 }
 .header-style-five .sticky-header .mobile-nav-toggler {
   display: inline;
-   
+   color: var(--blue) !important;
     position: absolute;
-    right: -10%;
+    left:-20%;
     top: 5px;
 }
 @media (max-width: 991.98px) {
   .header-style-five .sticky-header .mobile-nav-toggler {
     color: var(--theme-color1);
-    display: block;
+    display: inline;
+   
+    position: absolute;
+  right:-20%;
+    top: 5px;
   }
 }
 .header-style-five .sticky-header .main-menu .navigation > li > a {
@@ -6005,6 +6009,8 @@ Sticky Header
 
 .sticky-header .logo {
   padding: 10px 0;
+  position: absolute;
+  right: 10%;
 }
 .sticky-header .logo img {
   max-height: 100px;
@@ -6013,7 +6019,7 @@ Sticky Header
 @media (max-width: 900px) {
  .sticky-header .nav-outer {
      background: none;
-  margin-left:auto !important;
+  /* margin-left:auto !important; */
   position: relative;
   }
 }
@@ -6022,14 +6028,15 @@ Sticky Header
 @media (max-width: 700px) {
  .sticky-header .nav-outer {
      background: none;
-  margin-left:auto !important;
+  /* margin-left:auto !important; */
   position: relative;
+  
   }
 }
 
 .sticky-header .nav-outer {
   background: none;
-  margin-left:17%;
+  margin-left:15%;
   position: relative;
 }
 
@@ -6091,6 +6098,7 @@ Sticky Header
   color: var(--theme-color1);
   display: none;
   top: 0;
+  left: 0;
   margin-left: 30px;
   -webkit-box-ordinal-group: 9;
       -ms-flex-order: 8;
@@ -31884,9 +31892,9 @@ Sidebar
   display: none;
 }
 /* Hide WhatsApp button on desktop */
-.whatsapp-btn {
+/* .whatsapp-btn {
   display: none;
-}
+} */
 
 /* Mobile Styles */
 @media (max-width: 700px) {
